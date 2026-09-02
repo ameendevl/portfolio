@@ -133,7 +133,7 @@ export default function Hero({ onExploreWork, onContact }) {
           >
             <div className="relative w-full h-full rounded-xl overflow-hidden bg-[var(--bg-secondary)] border border-[var(--border-subtle)]">
               <img
-                src="/profile.jpg"
+                src={`${import.meta.env.BASE_URL}profile.jpg`}
                 alt="Ameen Profile"
                 className="w-full h-full object-cover object-top contrast-105 group-hover:scale-105 transition-all duration-700"
               />

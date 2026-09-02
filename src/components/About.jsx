@@ -61,7 +61,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden border border-[var(--border-subtle)] bg-[var(--bg-card)] p-3">
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
                 <img
-                  src="/profile.jpg"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="Ameen Portrait"
                   className="w-full h-full object-cover object-top contrast-105 hover:scale-105 transition-transform duration-700"
                 />

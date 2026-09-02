@@ -399,8 +399,8 @@ export const certificatesData = [
     serialNo: "36791",
     description: "Successfully completed intensive 2-month professional certification programme in Web Development held at NED University of Engineering & Technology in collaboration with Science & Information Technology Department, Government of Sindh.",
     skills: ["HTML5", "CSS3", "JavaScript", "Web Development", "Responsive Layouts", "Frontend Engineering"],
-    url: "/certificate-ned.jpg",
-    image: "/certificate-ned.jpg"
+    url: `${import.meta.env.BASE_URL}certificate-ned.jpg`,
+    image: `${import.meta.env.BASE_URL}certificate-ned.jpg`
   },
   {
     title: "Responsive Web Design & Modern CSS",
