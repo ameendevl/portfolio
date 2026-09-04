@@ -369,6 +369,17 @@ export const faqData = [
 
 export const certificatesData = [
   {
+    title: "Certificate of Appreciation — Project Showcase",
+    issuer: "Aptech Learning (University Road Center)",
+    year: "2026",
+    serialNo: "029154",
+    date: "22-JUL-2026",
+    description: "Awarded to Muhammad Ameen from Aptech University Road Center in recognition of outstanding project presentation and technical achievement at Internal Vision 2026.",
+    skills: ["Full-Stack Engineering", "Project Showcase", "Software Architecture", "UI/UX Engineering", "Aptech Certified"],
+    url: `${import.meta.env.BASE_URL}certificate-aptech.jpg`,
+    image: `${import.meta.env.BASE_URL}certificate-aptech.jpg`
+  },
+  {
     title: "Certificate of Competence — Web Development",
     issuer: "NED University (NED Academy) & Govt of Sindh (PITP)",
     year: "2026",

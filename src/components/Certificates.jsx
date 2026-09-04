@@ -39,7 +39,7 @@ export default function Certificates() {
               <div className="space-y-4">
                 {cert.image && (
                   <div className="rounded-xl overflow-hidden border border-[var(--border-subtle)] aspect-[16/11] bg-[var(--bg-secondary)] relative group-hover:border-[var(--accent-terracotta)]/40 transition-colors">
-                    <img src={cert.image} alt={cert.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={cert.image} alt={cert.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[10px] font-mono text-white">
                       {cert.year}
                     </div>
@@ -98,22 +98,22 @@ export default function Certificates() {
 
       <AnimatePresence>
         {selectedCert && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedCert(null)}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-pointer"
+              className="absolute inset-0 bg-black/70 backdrop-blur-sm cursor-pointer"
             />
 
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-lg bg-[var(--bg-primary)] p-8 rounded-2xl border border-[var(--border-subtle)] shadow-2xl z-10 space-y-6"
+              className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto bg-[var(--bg-primary)] p-6 sm:p-8 rounded-2xl border border-[var(--border-subtle)] shadow-2xl z-10 space-y-6"
             >
-              <div className="flex items-center justify-between border-b border-[var(--border-subtle)] pb-4">
+              <div className="flex items-center justify-between border-b border-[var(--border-subtle)] pb-4 sticky top-0 bg-[var(--bg-primary)]/95 backdrop-blur-sm z-10">
                 <div className="flex items-center gap-2 text-xs font-mono text-[var(--accent-terracotta)] uppercase tracking-wider">
                   <Award className="w-4 h-4" />
                   <span>{selectedCert.issuer} — {selectedCert.year}</span>
@@ -130,14 +130,19 @@ export default function Certificates() {
                 <h3 className="font-display text-2xl font-bold text-[var(--text-primary)]">
                   {selectedCert.title}
                 </h3>
-                <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
+                {selectedCert.serialNo && (
+                  <span className="inline-block text-[11px] font-mono px-3 py-1 rounded-full bg-[var(--bg-secondary)] text-[var(--accent-terracotta)] font-bold border border-[var(--border-subtle)]">
+                    Certificate Serial No: #{selectedCert.serialNo}
+                  </span>
+                )}
+                <p className="text-xs text-[var(--text-secondary)] leading-relaxed pt-1">
                   {selectedCert.description}
                 </p>
               </div>
 
               {selectedCert.image && (
-                <div className="rounded-xl overflow-hidden border border-[var(--border-subtle)] aspect-video bg-[var(--bg-secondary)]">
-                  <img src={selectedCert.image} alt={selectedCert.title} className="w-full h-full object-cover" />
+                <div className="rounded-xl overflow-hidden border border-[var(--border-subtle)] max-h-[58vh] bg-[var(--bg-secondary)] flex items-center justify-center p-2">
+                  <img src={selectedCert.image} alt={selectedCert.title} className="max-h-[54vh] w-auto object-contain rounded-lg shadow-lg mx-auto" />
                 </div>
               )}
 
@@ -159,9 +164,9 @@ export default function Certificates() {
                   href={selectedCert.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl bg-[var(--text-primary)] text-[var(--bg-primary)] hover:bg-[var(--accent-terracotta)] hover:text-white text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-xl bg-[var(--text-primary)] text-[var(--bg-primary)] hover:bg-[var(--accent-terracotta)] hover:text-white text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-sm"
                 >
-                  <span>Verify Online Credential</span>
+                  <span>Open Full High-Resolution Certificate</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               )}
