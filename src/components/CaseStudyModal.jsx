@@ -46,13 +46,36 @@ export default function CaseStudyModal({ project, onClose }) {
                   {project.category} ({project.year})
                 </span>
               </div>
-              <button
-                onClick={onClose}
-                aria-label="Close Case Study Modal"
-                className="p-2 rounded-full border border-[var(--border-subtle)] hover:bg-[var(--bg-secondary)] text-[var(--text-primary)] transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-2.5">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[var(--text-primary)] text-[var(--bg-primary)] hover:bg-[var(--accent-terracotta)] hover:text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <span>Live Demo</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[var(--border-subtle)] hover:border-[var(--accent-terracotta)] text-[var(--text-primary)] text-xs font-mono transition-colors"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  <span>Code</span>
+                </a>
+
+                <button
+                  onClick={onClose}
+                  aria-label="Close Case Study Modal"
+                  className="p-2 rounded-full border border-[var(--border-subtle)] hover:bg-[var(--bg-secondary)] text-[var(--text-primary)] transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
 
             <div className="space-y-4">

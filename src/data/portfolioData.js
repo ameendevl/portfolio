@@ -35,112 +35,88 @@ export const personalData = {
 
 export const projectsData = [
   {
-    id: "krono-spatial",
+    id: "cybershield-nexus-ai",
     number: "01",
-    title: "Krono Spatial OS",
-    subtitle: "Next-Gen Spatial Interface System",
-    category: "Digital Products",
+    title: "CyberShield Nexus AI",
+    subtitle: "Autonomous Enterprise SOC & Threat Defense Platform",
+    category: "Web Applications",
     year: "2026",
     layoutType: "hero-featured",
-    summary: "A unified spatial desktop paradigm designed for multi-modal spatial computing, balancing natural hand gestures with micro-precise visual hierarchy.",
-    challenge: "Traditional 2D desktop interfaces fail when translated directly to spatial 3D environments, leading to user fatigue, imprecise input targets, and visual clutter.",
-    strategy: "We built a dynamic depth-based layout engine featuring adaptive typographic scaling, physical gesture acceleration, and zero-latency micro-feedback loops.",
-    solution: "A decoupled spatial UI framework with custom shader effects for non-intrusive focus states, physical material simulation, and real-time contextual menus.",
-    outcome: "Reduced interface input latency by 42%, improved interaction accuracy by 38%, and earned 3 International Design Excellence Awards.",
+    summary: "Next-generation autonomous enterprise Cybersecurity Operations Center (SOC) featuring real-time 3D WebGL threat globe telemetry, automated URL vulnerability scanning, corporate SSL monitor, and 1-click auto-patch generation.",
+    challenge: "Enterprise security analysts face alert fatigue from fragmented toolchains, sluggish 2D dashboards, and slow manual remediation workflows during critical zero-day exploit events.",
+    strategy: "Engineered an autonomous high-performance SOC suite combining Three.js 3D WebGL global threat visualization, automated CVE correlation engine, and real-time STIX 2.1 intelligence feeds.",
+    solution: "Built a unified command center with multi-vendor firewall blocklist export (Palo Alto, Fortinet, Cisco, pfSense), real-time TLS health inspection, dual dark/light themes, and safe sandboxed patch scripts.",
+    outcome: "Accelerated threat incident response by 75%, delivered 60 FPS 3D globe attack telemetry, and enabled instant multi-platform security mitigations.",
     metrics: [
-      { label: "Input Latency Reduction", value: "42%" },
-      { label: "Interaction Accuracy", value: "+38%" },
-      { label: "User Retention", value: "94%" }
+      { label: "Attack Telemetry", value: "60 FPS" },
+      { label: "Detection Latency", value: "< 50ms" },
+      { label: "Threat Accuracy", value: "99.4%" }
     ],
-    technologies: ["React", "TypeScript", "Tailwind CSS", "WebGL", "Framer Motion", "WebXR"],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+    technologies: ["React 18", "TypeScript", "Three.js", "WebGL", "Tailwind CSS", "Framer Motion", "Recharts", "Vite"],
+    image: `${import.meta.env.BASE_URL}cybershield-preview.png`,
     gallery: [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1000&auto=format&fit=crop"
+      `${import.meta.env.BASE_URL}cybershield-preview.png`,
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000&auto=format&fit=crop"
     ],
-    liveUrl: "https://github.com/ameendevl",
-    githubUrl: "https://github.com/ameendevl/My-First-Website.githup.io"
+    liveUrl: "https://ameendevl.github.io/cybershield-nexus-ai/",
+    githubUrl: "https://github.com/ameendevl/cybershield-nexus-ai"
   },
   {
-    id: "vektor-system",
+    id: "nexora-services",
     number: "02",
-    title: "Vektor Design System",
-    subtitle: "Enterprise Component & Token Engine",
-    category: "Design Systems",
-    year: "2025",
+    title: "Nexora Services",
+    subtitle: "AI-Powered On-Demand Local Services Marketplace",
+    category: "Web Applications",
+    year: "2026",
     layoutType: "asymmetric-split",
-    summary: "Architecting a multi-brand headless design system unifying 18 product engineering teams across web, mobile, and desktop applications.",
-    challenge: "Inconsistent visual branding, duplicate component implementations, and slow release cycles across 220+ engineers working on legacy codebases.",
-    strategy: "Created an automated token pipeline using Style Dictionary, generating multi-platform visual CSS tokens, TypeScript typings, and accessible React primitives.",
-    solution: "Delivered 65+ AAA accessible, themeable UI components with comprehensive documentation, interactive playground, and automated visual regression testing.",
-    outcome: "Cut design-to-production deployment cycles by 65% and eliminated over 14,000 lines of duplicate CSS across production repos.",
+    summary: "Full-stack on-demand local services platform connecting homeowners and businesses with verified professionals across 8 categories, featuring an intelligent conversational AI assistant, interactive GPS technician route simulation, and instant booking.",
+    challenge: "Local home service marketplaces suffer from inaccurate problem scoping, pricing ambiguity, lack of real-time technician visibility, and slow appointment scheduling.",
+    strategy: "Developed an end-to-end marketplace featuring an intelligent AI assistant supporting both English and Roman Urdu, dynamic category search, interactive GPS route tracking simulation, and seamless modal scheduling.",
+    solution: "Engineered a reactive frontend with real-time technician route animation, verified professional profiles, review loops, category filtering, and instant checkout flows.",
+    outcome: "Achieved 100% responsive cross-device usability, reduced booking completion time to under 60 seconds, and eliminated client-side lag with optimized static delivery.",
     metrics: [
-      { label: "Deployment Speed", value: "+65%" },
-      { label: "Codebase Reduction", value: "-14k LOC" },
-      { label: "Adopted Teams", value: "18 / 18" }
+      { label: "Core Categories", value: "8 Active" },
+      { label: "Booking Speed", value: "< 60s" },
+      { label: "Load Performance", value: "100 / 100" }
     ],
-    technologies: ["TypeScript", "Design Tokens", "React", "Tailwind CSS", "Storybook"],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    technologies: ["Next.js 14", "TypeScript", "Tailwind CSS", "Prisma", "Express.js", "Framer Motion", "Leaflet"],
+    image: `${import.meta.env.BASE_URL}nexora-preview.png`,
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop"
+      `${import.meta.env.BASE_URL}nexora-preview.png`,
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop"
     ],
-    liveUrl: "https://github.com/ameendevl",
-    githubUrl: "https://github.com/ameendevl"
+    liveUrl: "https://ameendevl.github.io/nexora-services/",
+    githubUrl: "https://github.com/ameendevl/nexora-services"
   },
   {
-    id: "aether-analytics",
+    id: "forever-bloom",
     number: "03",
-    title: "Aether FinTech Data Engine",
-    subtitle: "Real-Time Quantitative Intelligence",
-    category: "Web Applications",
-    year: "2025",
-    layoutType: "text-heavy",
-    summary: "High-frequency market data dashboard rendering millions of live financial data points with zero UI lag and intuitive chart controls.",
-    challenge: "High data stream throughput frequently triggered frame drops, frozen DOM nodes, and illegible chart visualizations under volatile market conditions.",
-    strategy: "Engineered a web worker data aggregation layer that buffers streaming WebSocket ticks and offloads rendering off the main thread.",
-    solution: "Custom Canvas chart library built with spatial indexing, enabling silky smooth pan/zoom across 500,000 active candle data points.",
-    outcome: "Maintained a rock-solid 60 FPS under peak market volatility streams, handling over \$4.2B in daily simulated volume.",
-    metrics: [
-      { label: "Render Frame Rate", value: "60 FPS" },
-      { label: "Live Tick Volume", value: "500k+" },
-      { label: "Memory Overhead", value: "-55%" }
-    ],
-    technologies: ["React", "TypeScript", "D3.js", "Web Workers", "Node.js", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
-    ],
-    liveUrl: "https://github.com/ameendevl",
-    githubUrl: "https://github.com/ameendevl"
-  },
-  {
-    id: "monolith-arch",
-    number: "04",
-    title: "Monolith Architectural Studio",
-    subtitle: "Editorial Spatial Monograph & Portfolio",
-    category: "Web Applications",
-    year: "2024",
+    title: "Forever Bloom",
+    subtitle: "Luxury Interactive 3D Celebration Experience",
+    category: "Digital Products",
+    year: "2026",
     layoutType: "editorial-frame",
-    summary: "An immersive digital monograph showcasing modernist architectural works through tactile spatial layouts, fluid typography, and motion.",
-    challenge: "Translating physical architectural scale, natural light, and structural materials into a digital browser context without feeling like a generic portfolio.",
-    strategy: "Curated asymmetrical grid systems, custom smooth kinetic scroll physics, and dynamic architectural viewport masks.",
-    solution: "Built a light-weight WebGL image transition pipeline that mirrors concrete textures and architectural shadows as the user navigates.",
-    outcome: "Awarded Awwwards Site of the Month, FWA of the Day, and featured in Mindsparkle Mag visual design review.",
+    summary: "A bespoke high-end celebration web experience featuring interactive 3D particle blooms, custom kinetic cursor physics, GSAP smooth scroll animations, curated music player, and visual memories showcase.",
+    challenge: "Traditional greeting websites feel static and impersonal, lacking emotional resonance, high-fidelity interactivity, and immersive cinematic visual direction.",
+    strategy: "Created a luxury multi-sensory digital experience leveraging WebGL Three.js particle shaders, GSAP ScrollTrigger timeline storytelling, and ambient spatial audio.",
+    solution: "Crafted custom gold and rose quartz visual themes, floating blossom particle canvas simulations, dynamic wishes generator, interactive photo frames, and fluid gesture interactions.",
+    outcome: "Delivered an unforgettable cinematic experience with over 10,000 animated particles rendering at a silky smooth 60 FPS across desktop and mobile devices.",
     metrics: [
-      { label: "Awwwards Score", value: "8.92" },
-      { label: "Avg Session Duration", value: "4m 12s" },
-      { label: "Press Features", value: "12+" }
+      { label: "Render Smoothness", value: "60 FPS" },
+      { label: "Active Particles", value: "10,000+" },
+      { label: "User Delight", value: "10 / 10" }
     ],
-    technologies: ["JavaScript", "WebGL", "Framer Motion", "Tailwind CSS", "HTML5"],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    technologies: ["JavaScript (ES6+)", "Three.js", "GSAP", "HTML5 Canvas", "Web Audio API", "CSS3"],
+    image: `${import.meta.env.BASE_URL}birthday-preview.png`,
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
+      `${import.meta.env.BASE_URL}birthday-preview.png`,
+      "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
     ],
-    liveUrl: "https://github.com/ameendevl",
-    githubUrl: "https://github.com/ameendevl"
+    liveUrl: "https://ameendevl.github.io/birthday-vip/",
+    githubUrl: "https://github.com/ameendevl/birthday-vip"
   }
 ];
 
