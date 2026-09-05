@@ -276,7 +276,7 @@ export const processData = [
 export const testimonialsData = [
   {
     id: 1,
-    quote: "Alexander possesses that rare, potent combination of refined editorial design aesthetic and deep software engineering mastery. He delivered our design system ahead of schedule with flawless precision.",
+    quote: "Ameen possesses that rare, potent combination of refined editorial design aesthetic and deep software engineering mastery. He delivered our design system ahead of schedule with flawless precision.",
     author: "Marcus Thorne",
     role: "VP of Product",
     company: "Vektor Systems",
@@ -284,7 +284,7 @@ export const testimonialsData = [
   },
   {
     id: 2,
-    quote: "Working with Alexander was transformative for our brand. His editorial eye for detail, typography, and motion elevated our digital presence into an industry benchmark.",
+    quote: "Working with Ameen was transformative for our brand. His editorial eye for detail, typography, and motion elevated our digital presence into an industry benchmark.",
     author: "Elena Rostova",
     role: "Design Director",
     company: "Lumina Studio",
@@ -292,7 +292,7 @@ export const testimonialsData = [
   },
   {
     id: 3,
-    quote: "The real-time diagnostic dashboard Alexander architected reduced clinical interaction fatigue significantly. He understands human-centered UX and complex engineering deeply.",
+    quote: "The real-time diagnostic dashboard Ameen architected reduced clinical interaction fatigue significantly. He understands human-centered UX and complex engineering deeply.",
     author: "Dr. Henrik Lindqvist",
     role: "Chief Technology Officer",
     company: "Solaris Health",
