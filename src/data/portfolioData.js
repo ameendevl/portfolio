@@ -16,9 +16,9 @@ export const personalData = {
   ],
   stats: [
     { label: "Year Experience", value: 1, suffix: " Year" },
-    { label: "Completed Projects", value: 10, suffix: "+" },
+    { label: "Completed Projects", value: 12, suffix: "+" },
     { label: "Satisfied Clients", value: 8, suffix: "+" },
-    { label: "Code Repositories", value: 12, suffix: "+" }
+    { label: "Code Repositories", value: 14, suffix: "+" }
   ],
   bio: {
     intro: "Software Developer focused on building scalable applications, solving complex problems, and writing clean, maintainable code.",
@@ -91,8 +91,36 @@ export const projectsData = [
     githubUrl: "https://github.com/ameendevl/nexora-services"
   },
   {
-    id: "forever-bloom",
+    id: "readify",
     number: "03",
+    title: "Readify",
+    subtitle: "Modern Online Bookstore & Literary Community Platform",
+    category: "Web Applications",
+    year: "2026",
+    layoutType: "hero-featured",
+    summary: "Modern, animation-rich digital bookstore and reading community featuring an interactive slide-out cart drawer with free shipping unlock meter, quick-view preview modal, multi-genre debounced search, 2026 reading milestone goal tracker, and instant dark/light mode switcher.",
+    challenge: "Online book discovery often suffers from cluttered layouts, lack of immediate page/quote previews, cumbersome cart flows, and missing personal reading motivation trackers.",
+    strategy: "Architected a zero-dependency, ultra-fast bookstore experience leveraging semantic HTML5, modern CSS3 custom properties with glassmorphism, and modular ES6+ JavaScript with persistent localStorage state.",
+    solution: "Built an immersive multi-page literary ecosystem including a dynamic slide-out cart drawer with free shipping threshold calculation, instant quick-view modals with synopsis and author quotes, debounced search with genre pills (Classics, Fiction, Self-Help, Finance, Sci-Fi), interactive 2026 reading goal milestone tracker, and animated order celebration flows.",
+    outcome: "Achieved 100% responsive cross-device usability, sub-second page loads with zero runtime framework bundle overhead, and a delightful reading community experience with persistent cart and reading logs.",
+    metrics: [
+      { label: "Curated Catalog", value: "24+ Titles" },
+      { label: "Load Speed", value: "< 0.8s" },
+      { label: "Framework Overhead", value: "0 KB (Pure JS)" }
+    ],
+    technologies: ["JavaScript (ES6+)", "HTML5", "CSS3", "LocalStorage API", "IntersectionObserver", "Responsive UI"],
+    image: `${import.meta.env.BASE_URL}readify-preview.png`,
+    gallery: [
+      `${import.meta.env.BASE_URL}readify-preview.png`,
+      `${import.meta.env.BASE_URL}readify-library.png`,
+      `${import.meta.env.BASE_URL}readify-bookclub.png`
+    ],
+    liveUrl: "https://ameendevl.github.io/readify/",
+    githubUrl: "https://github.com/ameendevl/readify"
+  },
+  {
+    id: "forever-bloom",
+    number: "04",
     title: "Forever Bloom",
     subtitle: "Luxury Interactive 3D Celebration Experience",
     category: "Digital Products",
